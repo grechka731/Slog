@@ -1,0 +1,8 @@
+.xmake/
+build/
+.vscode/
+.idea/
+*.log
+*.exe
+*.obj
+*.o
