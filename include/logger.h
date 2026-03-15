@@ -1,4 +1,4 @@
-#pragma once
+git remote add origin https://github.com/твой_логин/Slog.git#pragma once
 #include "logSysem.h"
 #include <chrono>
 #include <condition_variable>
