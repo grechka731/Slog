@@ -1,4 +1,4 @@
-#include "logSysem.h"
+#include "logSystem.h"
 #include <chrono>
 #include <condition_variable>
 #include <cstring>
