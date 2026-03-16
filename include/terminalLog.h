@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../include/logSysem.h"
+#include "../include/logSystem.h"
 #include "../include/logger.h"
 
 class terminalLog : public logSystem {
