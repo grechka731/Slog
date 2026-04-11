@@ -1,0 +1,6 @@
+[
+{
+  "directory": "/run/media/grechka/linuxEXT/code/Slog",
+  "arguments": ["/usr/bin/g++", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/Slog/linux/x86_64/release/src/logger.cpp.o", "src/logger.cpp"],
+  "file": "src/logger.cpp"
+}]

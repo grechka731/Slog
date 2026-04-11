@@ -1,7 +1,6 @@
 #pragma once
-
-#include "../include/logSystem.h"
-#include "../include/logger.h"
+#include "logSystem.h"
+#include "logger.h"
 #include <iostream>
 #include <fstream>
 

@@ -1,3 +1,5 @@
+#pragma once
+
 #include "logSystem.h"
 #include <chrono>
 #include <condition_variable>
@@ -52,6 +54,11 @@ public:
   bool addLog(LogLevel type, const char *file, const char *func, int line,
               const char *msg);
   void addSystem(logSystem *system);
+  logSystem *getSystem(size_t index) {
+    if (index < _allSystem.size())
+      return _allSystem[index];
+    return nullptr;
+  }
 
 private:
   Logger();

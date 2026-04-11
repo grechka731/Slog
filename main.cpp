@@ -1,37 +1,40 @@
-  #include "src/logger.h"
-  #include "src/systems/terminalLog.h"
-  #include "src/systems/fileLog.h"
+#include "fileLog.h"
+#include "logSystem.h"
+#include "logger.h"
+#include "terminalLog.h"
 
-  #include <iostream>
+#include <iostream>
 
-  int main() {
-    std::cout<<"Slog Software Framework v1.0"<<std::endl;
-    std::cout<<"GitHub: https://github.com/grechka731"<<std::endl;
-    std::cout<<"Copyright (c) 2026 Grechka. All rights reserved"<<std::endl<<std::endl;
+int main() {
+  std::cout << "Slog Software Framework v12042026" << std::endl;
+  std::cout << "GitHub: https://github.com/grechka731" << std::endl;
+  std::cout << "Copyright (c) 2026 Grechka. All rights reserved" << std::endl
+            << std::endl;
 
+  // Slog code-->
+  // Slog code-->
+  // Slog code-->
 
+  // connect terminal log output system
 
-    // Slog code-->
-    // Slog code-->
-    // Slog code-->
+  auto *term = new terminalLog;
+  logger.addSystem(term);
+  logger.addSystem(new fileLog("log"));
 
-    // connect terminal log output system
+  term->setStyle(CRITICAL, {255, 0, 0, 255, 255, 255, true});
+  term->setStyle(WARNING, {255, 140, 0, 0, 0, 0, false});
 
-    logger.addSystem(new terminalLog);
-    logger.addSystem(new fileLog("log"));
+  LOG_DEBUG("DEBUG");
+  LOG_INFO("INFO");
+  LOG_WARN("WARNING");
+  LOG_ERROR("ERROR");
+  LOG_CRITICAL("CRITICAL");
 
-    LOG_DEBUG("DEBUG");       // verbose debug info
-    LOG_INFO("INFO");         // general information
-    LOG_WARN("WARNING");   // something worth attention
-    LOG_ERROR("ERROR");       // recoverable error
-    LOG_CRITICAL("CRITICAL"); // fatal, execution should stop
+  //<--Slog code
+  //<--Slog code
+  //<--Slog code
 
-    //<--Slog code
-    //<--Slog code
-    //<--Slog code
-
-
-    while (1) {
-    }
-    return 0;
+  while (1) {
   }
+  return 0;
+}
