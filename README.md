@@ -1,4 +1,4 @@
-# Slog ⚡
+# Slog 
 ### High-Performance Async Logger for C++20
 
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://en.cppreference.com/w/cpp/20)
